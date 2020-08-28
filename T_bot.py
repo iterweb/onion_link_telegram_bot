@@ -35,7 +35,7 @@ def send_welcome(message):
 
 @bot.message_handler(content_types=["text"])
 def send_anytext(message):  
-    user = message.text.lower()
+    #user = message.text.lower()
     chat_id = message.chat.id
     if message.text == 'Красная':
         bot.send_message(message.from_user.id, 'Я твой путеводитель на тёмной стороне интернета!\nСсылки обновляются раз в неделю (если, есть чем обновлять).', reply_markup=keyboard())
